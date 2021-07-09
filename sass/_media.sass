@@ -1,9 +1,12 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+
+
+
 @media ( max-width: 992px )
   .container
-    max-width: 700px
+    max-width: 800px
   .logo
     width: 132px
   .navbar
@@ -23,9 +26,23 @@
       width: 340px
 @media ( max-width: 768px )
   .container
-    max-width: 576px
-    width: 92%
+    max-width: 700px
+  .logo
+    width: 132px
+    height: 18px
+  .navbar
+    &__search
+      margin-left: 47px
+
+@media(max-width: 320px)
+  .container
+    max-width:280px
+  .logo
+    width: 99px
+    height: 14px
   .navbar 
+    &-top
+      height: 70px 
     &__search
       display: none
     &-menu
@@ -48,9 +65,4 @@
         width: 16px
         height: 1px
         background-color: $text-color
-@media(max-width: 576px)
-  .logo
-    width: 99px
-
-  
   

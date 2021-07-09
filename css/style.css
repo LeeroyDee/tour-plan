@@ -396,6 +396,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -487,8 +488,16 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
-    width: 92%;
+    max-width: 92%;
+  }
+  .navbar__search {
+    margin-left: 47px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 99px;
   }
   .navbar__search {
     display: none;
@@ -515,11 +524,5 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
   }
 }
