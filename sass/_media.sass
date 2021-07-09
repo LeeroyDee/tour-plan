@@ -1,12 +1,6 @@
-@media ( max-width: 1200px )
+@media ( max-width: 1440px )
   .container
-    max-width: 960px
-
-
-
-@media ( max-width: 992px )
-  .container
-    max-width: 800px
+    max-width: 1100px
     width: 92%
   .logo
     width: 132px
@@ -25,34 +19,12 @@
   .search
     &__input
       width: 340px
-@media ( max-width: 768px )
-  .container
-    max-width: 700px
-  .logo
-    width: 132px
-    height: 18px
-  .navbar
-    &-top
-      height: 100px
-    &-bottom
-      height: 60px
-    &__search
-      margin-left: 47px
-@media(max-width: 700px)
-  .navbar
-    &__search
-      display: none
-    &-bottom
-      display: none
-@media(max-width: 320px)
-  .container
-    max-width: 280px
-  .logo
-    width: 99px
-    height: 14px
+@media ( max-width: 767px )
   .navbar 
     &-top
-      height: 70px 
+      height: 70px
+    &-bottom
+      display: none 
     &__search
       display: none
     &__user
@@ -73,4 +45,11 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  
+@media(max-width: 320px)
+  .container
+    max-width: 280px
+  .logo
+    width: 99px
+    height: 14px
   
