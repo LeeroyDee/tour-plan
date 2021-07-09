@@ -506,6 +506,15 @@ img {
   }
 }
 
+@media (max-width: 700px) {
+  .navbar__search {
+    display: none;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
@@ -518,9 +527,6 @@ img {
     height: 70px;
   }
   .navbar__search {
-    display: none;
-  }
-  .navbar-bottom {
     display: none;
   }
   .navbar__user {
