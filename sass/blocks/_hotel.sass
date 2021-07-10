@@ -1,5 +1,4 @@
-.hotel-info__star
-  margin-right: 40px
+
 .hotel
   padding-top: 23px
   padding-bottom: 70px
@@ -8,7 +7,9 @@
     align-items: center
     justify-content: space-between
     &__star
+      object-fit: cover
       margin-right: -2px
+      height: 8px
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -28,9 +29,14 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+    &__stars
+      margin-bottom: 8px
 
 .stars
+  height: 8px
+  width: 48px
   flex-basis: 100%
+
 
 .offer
   font-weight: 600
