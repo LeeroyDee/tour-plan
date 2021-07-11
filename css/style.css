@@ -490,9 +490,8 @@ img {
 }
 
 .hotel-info__star {
+  margin-right: 3px;
   object-fit: cover;
-  margin-right: -2px;
-  height: 8px;
 }
 
 .hotel-info__offer {
@@ -501,7 +500,7 @@ img {
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
@@ -524,13 +523,9 @@ img {
   align-items: center;
 }
 
-.hotel-wrapper__stars {
-  margin-bottom: 8px;
-}
-
 .stars {
+  display: flex;
   height: 8px;
-  width: 48px;
   flex-basis: 100%;
 }
 
