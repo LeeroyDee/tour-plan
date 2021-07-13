@@ -525,6 +525,7 @@ img {
 }
 
 .hotel-grid {
+  width: 100%;
   display: flex;
 }
 
@@ -644,6 +645,7 @@ img {
 }
 
 .booking__button {
+  text-align: center;
   width: 295px;
   height: 45px;
   background-color: #EC1F46;
@@ -777,6 +779,28 @@ img {
   .search__input {
     width: 340px;
   }
+  .slider {
+    width: 100%;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel-right {
+    flex-direction: row;
+    margin: 0;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  .booking {
+    padding-left: 22px;
+    padding-right: 23px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -843,5 +867,31 @@ img {
   .logo {
     width: 99px;
     height: 14px;
+  }
+  .booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .booking__button {
+    width: 235px;
+  }
+  .booking__info {
+    width: 235px;
+  }
+  .call-center {
+    width: 235px;
+  }
+  .map {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .hotel-right {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 }
