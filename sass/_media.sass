@@ -25,6 +25,7 @@
   .map
     width: 340px
   .hotel
+    padding-bottom: 59px
     &-grid
       flex-direction: column
     &-right
@@ -35,6 +36,9 @@
   .booking
     padding-left: 22px
     padding-right: 23px
+  .newsletter
+    &-wrapper
+      width: 700px
 @media ( max-width: 767px )
   .container
     max-width: 88%
@@ -105,10 +109,30 @@
     margin-top: 20px
     width: 100%
   .hotel
+    padding-bottom: 40px
     &-right
       align-items: center
       flex-direction: column
       margin: 0
       margin-top: 20px
       justify-content: space-between
-  
+  .newsletter
+    height: 319px
+    padding-bottom: 83px
+    padding-top: 76px
+    &-wrapper
+      width: 88%
+      flex-direction: column
+    &-title
+      margin-bottom: 37px
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+    &__button
+      padding-left: 20px
+    &__input
+      width: 280px
+      
+
