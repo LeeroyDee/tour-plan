@@ -105,30 +105,27 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider">
-          <div class="swiper-container">
+          <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img  class="swiper-slide__image
+              <div class="swiper-slide hotel-slider__item"><img  class="swiper-slide__image
                 " src="img/slider/arkana.jpg" alt="slade"></div>
-              <div class="swiper-slide"><img  class="swiper-slide__image
+              <div class="swiper-slide hotel-slider__item"><img  class="swiper-slide__image
                 " src="img/slider/as.jpg" alt="slade"></div>
-              <div class="swiper-slide"><img  class="swiper-slide__image
+              <div class="swiper-slide hotel-slider__item"><img  class="swiper-slide__image
                 " src="img/slider/rectangle.jpg" alt="slade"></div>
-              <div class="swiper-slide"><img  class="swiper-slide__image
+              <div class="swiper-slide hotel-slider__item"><img  class="swiper-slide__image
                 " src="img/slider/gelik.jpg" alt="slade"></div>
-              <div class="swiper-slide"><img class="swiper-slide__image
+              <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image
                 "  src="img/slider/tesla.jpg" alt="slade"></div>
             </div>
 
             <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button--next"></button>
           
           </div>
-        </div>
-        <!-- /.slider -->
         <div class="hotel-right">
           <div class="booking">
             <div class="booking__info">
@@ -176,12 +173,47 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="#" class="subscribe newsletter__subscribe">
-      <input type="text" placeholder="Your email address" class="subscribe__input">
-        <button class="subscribe__button">
+        <input type="text" placeholder="Your email address" class="subscribe__input">
+          <button class="subscribe__button">
           Send
-        </button>
+          </button>
       </form>
     </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpeg" alt="photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+              </div>
+
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+        </div>
+        
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </div>
+    <!-- /.container -->
   </section>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=0d5ad99c-bf51-4c45-8792-02134e490382&lang=ru_RU" type="text/javascript">
   </script>
