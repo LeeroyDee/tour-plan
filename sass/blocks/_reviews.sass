@@ -1,0 +1,96 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-family: "Mulish"
+    font-weight: 700
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: #fff
+      border-radius: 8px;
+      padding: 0 62px 30px
+      width: 730px
+      margin: 45px auto 0
+      &::before
+        position: absolute
+        top: 13px
+        left: 62px
+        content: ""
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+      &::after
+        position: absolute
+        top: 118px
+        right: 62px
+        content: ""
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%) 
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 100
+      &--prev
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 30px
+    &__avatar
+      width: 98px
+      height: 98px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      font-family: "Mulish"
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      color: #EC1F46
+      margin-bottom: 10px
+    &__date
+      margin-bottom: 4px
+      font-family: "Mulish"
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 13px;
+      color: #000000;
+    &__rating
+      display: flex
+      align-items: center
+    &__text
+      width: 537px
+      margin: auto
+      font-family: "Mulish"
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 160%;
+      text-align: justify;
+      color: #333333

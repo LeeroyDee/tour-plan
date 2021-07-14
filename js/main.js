@@ -1,4 +1,4 @@
-var swiper = new Swiper('.hotel-slider', {
+var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -13,6 +13,21 @@ var swiper = new Swiper('.hotel-slider', {
   },
 
 });
+var reviewsSlider = new Swiper('.reviews-slider', {
+    // Optional parameters
+    loop: true,
+  
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-slider__button--next',
+      prevEl: '.reviews-slider__button--pref',
+    },
+    keyboard: {
+      enabled: true,
+    },
+  
+  });
 
 //swiper.slideNext();
 // document.addEventListener("keydown", (e) =>{
