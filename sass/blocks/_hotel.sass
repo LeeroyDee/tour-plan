@@ -78,7 +78,7 @@
     height: 100%
 .swiper-container
   width: 100%
-  height: 450px
+  height: 100%
   position: relative
   border-radius: 8px 
   &::after
@@ -94,6 +94,7 @@
     z-index: 40
 .slider
   width: 728px
+  height: 450px
   &-button
     position: absolute
     top: 50%
@@ -153,7 +154,7 @@
   &__pricetag
     font-family: "Nunito"
     font-weight: 800
-    font: size 24px
+    font-size: 24px
     line-height: 32px
     color: $light
   &__per-room
@@ -170,6 +171,9 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &+&
+      margin-top: 8px
+      
   &__icon
     width: 14px
     height: 14px
