@@ -91,4 +91,4 @@ ymaps.ready(function () {
       .add(myPlacemarkWithContent);
 });
 
-$('newsletter').parallax({imageSrc: '/img/newsletter-bg.jpeg'});
+$('newsletter').parallax({imageSrc: './img/newsletter-bg.jpeg'});
