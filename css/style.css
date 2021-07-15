@@ -592,6 +592,7 @@ img {
   display: flex;
   height: 8px;
   flex-basis: 100%;
+  gap: 2px;
 }
 
 .offer {
@@ -939,8 +940,8 @@ img {
 }
 
 .reviews-slider__avatar {
-  width: 98px;
-  height: 98px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 9px;
@@ -1031,6 +1032,10 @@ img {
     padding-left: 22px;
     padding-right: 23px;
   }
+  .newsletter {
+    padding-top: 92px;
+    padding-bottom: 93px;
+  }
   .newsletter-wrapper {
     width: 700px;
   }
@@ -1045,6 +1050,7 @@ img {
     padding: 0 60px 30px 60px;
   }
   .reviews__title {
+    margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
   }
