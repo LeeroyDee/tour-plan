@@ -21,7 +21,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     // Navigation arrows
     navigation: {
       nextEl: '.reviews-slider__button--next',
-      prevEl: '.reviews-slider__button--pref',
+      prevEl: '.reviews-slider__button--prev',
     },
     keyboard: {
       enabled: true,
@@ -90,3 +90,5 @@ ymaps.ready(function () {
       .add(myPlacemark)
       .add(myPlacemarkWithContent);
 });
+
+$('newsletter').parallax({imageSrc: '/img/newsletter-bg.jpeg'});

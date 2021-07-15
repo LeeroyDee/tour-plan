@@ -1,5 +1,7 @@
 .reviews
   padding: 40px 0 70px 0
+  &__rating
+    height: 8px
   &__title
     font-family: "Mulish"
     font-weight: 700
@@ -7,6 +9,7 @@
     line-height: 45px;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 0
     margin-bottom: 70px
   &-slider
     &__item
@@ -16,8 +19,8 @@
       align-items: center
       background-color: #fff
       border-radius: 8px;
-      padding: 0 62px 30px
-      width: 730px
+      padding: 0 95px 30px 99px
+      width: 731px
       margin: 45px auto 0
       &::before
         position: absolute
@@ -69,6 +72,7 @@
       object-fit: cover
       margin-bottom: 9px
     &__username
+      margin-top: 0
       font-family: "Mulish"
       font-weight: 700
       font-size: 12px
@@ -85,12 +89,12 @@
     &__rating
       display: flex
       align-items: center
-    &__text
-      width: 537px
-      margin: auto
-      font-family: "Mulish"
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 160%;
-      text-align: justify;
-      color: #333333
+  &__text
+    width: 537px
+    margin: auto
+    font-family: "Mulish"
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: justify;
+    color: #333333
