@@ -844,6 +844,8 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
   background-color: #EC1F46;
   color: #ffffff;
   min-width: 65px;
@@ -908,8 +910,7 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 135px;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -923,12 +924,12 @@ img {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 17px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 17px;
 }
 
 .reviews-slider__profile {
@@ -1275,10 +1276,11 @@ img {
     margin-bottom: 42px;
   }
   .reviews__text {
-    width: 219px;
+    width: 80%;
+    text-align: left;
   }
   .reviews-slider__item {
-    width: 281px;
+    width: 88%;
     padding: 0 30px 35px 30px;
   }
   .reviews-slider__button {
@@ -1305,5 +1307,17 @@ img {
   }
   .card {
     width: 280px;
+  }
+  .card:nth-child(1) {
+    order: 0;
+  }
+  .card:nth-child(2) {
+    order: 2;
+  }
+  .card:nth-child(3) {
+    order: 1;
+  }
+  .card:nth-child(4) {
+    order: 3;
   }
 }

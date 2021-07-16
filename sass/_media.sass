@@ -173,10 +173,12 @@
       margin-right: auto
       margin-bottom: 42px
     &__text
-      width: 219px
+      width: 80%
+      text-align: left
     &-slider
       &__item
-        width: 281px
+        
+        width: 88%
         padding: 0 30px 35px 30px
       &__button
         top: 45px
@@ -197,3 +199,12 @@
       gap: 20px 
   .card
     width: 280px
+    &:nth-child(1)
+      order: 0
+    &:nth-child(2)
+      order: 2
+    &:nth-child(3)
+      order: 1
+    &:nth-child(4)
+      order: 3
+      
