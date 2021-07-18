@@ -68,9 +68,12 @@
   .card
     width: 340px
   .packages
+    &-title
+      font-size: 30px;
+      line-height: 38px; 
     &-wrapper
       grid-template: 1fr 1fr 1fr/1fr 1fr 
-
+  
   
 @media ( max-width: 767px )
   .container
@@ -216,6 +219,9 @@
     &:nth-child(4)
       order: 3
   .packages
+    &-title
+      font-size: 18px;
+      line-height: 22px;
     &-wrapper
       grid-template: repeat(5,1fr)/ 100%
   .package

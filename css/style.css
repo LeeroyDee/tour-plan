@@ -931,8 +931,6 @@ img {
 }
 
 .information--big {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 37px;
 }
 
@@ -954,7 +952,7 @@ img {
   left: 0;
   width: 14px;
   height: 14px;
-  background-image: url("/img/user.svg");
+  background-image: url("../img/user.svg");
   background-repeat: no-repeat;
 }
 
@@ -976,7 +974,7 @@ img {
   left: 0;
   width: 14px;
   height: 14px;
-  background-image: url("/img/packages/map-pin.svg");
+  background-image: url("../img/packages/map-pin.svg");
   background-repeat: no-repeat;
 }
 
@@ -998,10 +996,11 @@ img {
   width: 14px;
   height: 14px;
   background-repeat: no-repeat;
-  background-image: url("/img/home.svg");
+  background-image: url("../img/home.svg");
 }
 
 .newsletter {
+  background: transparen;
   height: 260px;
   position: relative;
   padding: 98px 0 87px 0;
@@ -1380,6 +1379,10 @@ img {
   .card {
     width: 340px;
   }
+  .packages-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .packages-wrapper {
     grid-template: 1fr 1fr 1fr/1fr 1fr;
   }
@@ -1565,6 +1568,10 @@ img {
   .card:nth-child(4) {
     order: 3;
   }
+  .packages-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
   .packages-wrapper {
     grid-template: repeat(5, 1fr)/100%;
   }
@@ -1574,7 +1581,6 @@ img {
   .package--big {
     grid-column: 1/1;
     flex-direction: column;
-    margin: 0 auto;
     max-width: 350px;
     height: 500px;
   }

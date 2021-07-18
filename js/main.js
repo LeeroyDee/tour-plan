@@ -1,4 +1,5 @@
-
+$(document).ready(function () {
+  $('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpeg'}); });
   var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
@@ -91,6 +92,5 @@
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
   });
-  
-  $('newsletter').parallax({imageSrc: '../img/newsletter-bg.jpeg'});
+
 
