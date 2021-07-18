@@ -1,5 +1,4 @@
-$(document).ready(function () {
-  $('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpeg'}); });
+
   var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
@@ -76,7 +75,7 @@ $(document).ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#imageWithContent',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/iconMap.svg',
+            iconImageHref: '../img/iconMap.svg',
             // Размеры метки.
             iconImageSize: [28, 48],
             // Смещение левого верхнего угла иконки относительно

@@ -1568,7 +1568,11 @@ img {
   .card:nth-child(4) {
     order: 3;
   }
+  .packages {
+    padding-top: 30px;
+  }
   .packages-title {
+    margin-bottom: 50px;
     font-size: 18px;
     line-height: 22px;
   }
