@@ -62,18 +62,47 @@
       line-height: 38px
      
   .activities 
+    padding-bottom: 69px
     &-wrapper
       flex-wrap: wrap
       gap: 20px 20px
   .card
     width: 340px
   .packages
+    padding-top: 0
     &-title
       font-size: 30px;
       line-height: 38px; 
     &-wrapper
       grid-template: 1fr 1fr 1fr/1fr 1fr 
-  
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: 186px 310px 1fr
+      grid-template-rows: 142px 278px 1fr 1fr 135px
+      grid-template-areas: "logo netw netw" "cat addi leg" "cont cont cont" "form form form" "bot bot bot"
+    &__bottom
+      justify-content: space-between;
+      align-items: center;
+      height: 135px;
+      margin-left: 2px;
+    &__logo
+      align-self: start
+      top: 0
+      left: 0
+      width: 100px;
+      height: 115px;
+    &__social
+      &-network
+        align-self: center
+    &__title
+      &--mt-17
+        margin-top: 16px
+      &--mt-5
+        margin-top: 3px
+    &__contacts
+      &-form
+        max-width: 539px  
   
 @media ( max-width: 767px )
   .container
@@ -219,7 +248,7 @@
     &:nth-child(4)
       order: 3
   .packages
-    padding-top: 30px
+    padding-top: 10px
     &-title
       margin-bottom: 50px
       font-size: 18px;
@@ -267,7 +296,46 @@
   .information
     &--big
       margin-bottom: 24px
-    
-      
+  .footer
+    padding-top: 73px
+    &__contacts-form
+      width: 100%
+    &-wrapper
+      grid-template-columns: 100%
+      grid-template-rows: 109px 96px 129px 180px 235px minmax(278px,1fr) 1fr 
+      grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot"
+      grid-row-gap: 20px
+    &__bottom
+      flex-direction: column
+      height: 50px
+      margin-left: 0
+    &__logo
+      width: 102px
+      height: 120px 
+    &__title
+      flex-basis: 100%
+    &__social
+      &-network
+        flex-wrap: wrap
+    &__input
+      order: 1
+      flex-basis: 100%
+    &__message
+      margin-bottom: 15px
+      order: 2
+    &__info
+      margin-bottom: 15px
+      display: flex
+      flex-basis: 100%
+      order: 3
+    &__button
+      order: 4
 
-
+  .bottom
+    &__text
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    &__image
+      margin-left: 0
+      width: 100%
