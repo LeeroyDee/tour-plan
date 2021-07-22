@@ -12,19 +12,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="" class="logo">
           <img src="./img/horizontal-logo.svg" alt="logo:Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img src="./img/search.svg" alt="icon: search">
           </button>
         </form>
-        <a class="user navbar__user" href="#">
+        <a class="user navbar__user navbar__user--mobile_hidden" href="#">
           <img src="./img/user-avatar.png" alt="avatar:Nathan" class="user__avatar">
           <div class="user__name">Nathan</div>
         </a>
@@ -39,6 +39,20 @@
     <nav class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a class="user navbar__user navbar__user--mobile_visible" href="#">
+              <img src="./img/user-avatar.png" alt="avatar:Nathan" class="user__avatar">
+              <div class="user__name user__name--light">Nathan</div>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" placeholder="Search Location" class="search__input">
+              <button class="search__button">
+                <img src="./img/search.svg" alt="icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -495,13 +509,13 @@
           </form>
         </div>
         <!-- footer__contacts-form -->
-        <div class="footer__bottom">
+        <div class="bottom footer__bottom">
             <div class="bottom__text">
               <a href="#" class="bottom__link">Disclaimer</a>
               <a href="#" class="bottom__link">Conditions of use</a>
               <a href="#" class="bottom__link">Cancellation policy</a>
             </div>
-            <div class="bottom__image">
+            <div class="image bottom__image">
               <a href="#" class="image__link">
                 <img src="img/pay.png" alt="image: pay">
               </a>
