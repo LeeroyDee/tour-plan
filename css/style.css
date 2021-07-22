@@ -1396,7 +1396,7 @@ img {
 }
 
 .footer__item {
-  display: flex;
+  word-wrap: break-word;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1406,6 +1406,54 @@ img {
 
 .footer__item--mb-2 {
   margin-bottom: 20px;
+}
+
+.footer__tel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 44px;
+}
+
+.footer__tel::before {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background-image: url(../img/contakt-phone-call.svg);
+  background-repeat: no-repeat;
+}
+
+.footer__email {
+  position: relative;
+  padding-left: 44px;
+}
+
+.footer__email::before {
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 16px;
+  height: 13px;
+  content: "";
+  background-image: url(../img/email.svg);
+}
+
+.footer__adress {
+  position: relative;
+  padding-left: 44px;
+}
+
+.footer__adress::before {
+  position: absolute;
+  left: 9px;
+  top: 2px;
+  width: 14px;
+  height: 20px;
+  content: "";
+  background-image: url(../img/mapMarker.svg);
 }
 
 .footer__text {
@@ -1442,6 +1490,12 @@ img {
   height: 50px;
   margin-bottom: 15px;
   flex-basis: 47%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__message {
@@ -1452,6 +1506,12 @@ img {
   border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1910,11 +1970,14 @@ img {
   .footer__contacts-form {
     width: 100%;
   }
+  .footer__adress, .footer__tel, .footer__email {
+    padding-left: 30px;
+  }
   .footer-wrapper {
-    grid-template-columns: 100%;
-    grid-template-rows: 109px 96px 129px 180px 235px minmax(278px, 1fr) 1fr;
-    grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot";
-    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 119px 90px 210px 228px auto 1fr 48px;
+    grid-template-areas: "logo logo" "netw netw" "leg addi" "cat cat" "cont cont" " form form" "bot bot";
+    grid-row-gap: 30px;
   }
   .footer__bottom {
     flex-direction: column;
@@ -1927,6 +1990,9 @@ img {
   }
   .footer__title {
     flex-basis: 100%;
+  }
+  .footer__social-links {
+    margin-left: 0;
   }
   .footer__social-network {
     flex-wrap: wrap;
@@ -1956,5 +2022,14 @@ img {
   .bottom__image {
     margin-left: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .footer-wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot";
+    grid-row-gap: 20px;
   }
 }

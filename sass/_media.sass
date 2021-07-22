@@ -341,11 +341,13 @@
     padding-top: 73px
     &__contacts-form
       width: 100%
+    &__adress,&__tel,&__email
+      padding-left: 30px
     &-wrapper
-      grid-template-columns: 100%
-      grid-template-rows: 109px 96px 129px 180px 235px minmax(278px,1fr) 1fr 
-      grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot"
-      grid-row-gap: 20px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 119px 90px 210px 228px auto 1fr 48px; 
+      grid-template-areas: "logo logo" "netw netw" "leg addi" "cat cat" "cont cont" " form form" "bot bot"
+      grid-row-gap: 30px
     &__bottom
       flex-direction: column
       height: 50px
@@ -356,6 +358,8 @@
     &__title
       flex-basis: 100%
     &__social
+      &-links
+        margin-left: 0
       &-network
         flex-wrap: wrap
     &__input
@@ -380,3 +384,10 @@
     &__image
       margin-left: 0
       width: 100%
+@media ( max-width: 415px )
+  .footer
+    &-wrapper
+      grid-template-columns: 100%
+      grid-template-rows: auto
+      grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot"
+      grid-row-gap: 20px

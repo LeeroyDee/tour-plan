@@ -67,7 +67,7 @@
     &--mb-34
       margin-bottom: 34px
   &__item
-    display: flex
+    word-wrap: break-word 
     font-style: normal
     font-weight: normal
     font-size: 14px
@@ -75,6 +75,42 @@
     color: $footer-text-color
     &--mb-2
       margin-bottom: 20px
+  &__tel
+    position: relative
+    display: flex
+    flex-direction: column
+    padding-left: 44px
+    &::before
+      position: absolute
+      left: 7px
+      top: 7px
+      width: 18px
+      height: 18px
+      content: ""
+      background-image: url(../img/contakt-phone-call.svg)
+      background-repeat: no-repeat
+  &__email
+    position: relative
+    padding-left: 44px
+    &::before
+      position: absolute
+      left: 7px
+      top: 4px
+      width: 16px
+      height: 13px
+      content: ""
+      background-image: url(../img/email.svg)
+  &__adress
+    position: relative
+    padding-left: 44px
+    &::before
+      position: absolute
+      left: 9px
+      top: 2px
+      width: 14px
+      height: 20px
+      content: ""
+      background-image: url(../img/mapMarker.svg)
   &__text
     font-family: "Mulish"
     font-style: normal
@@ -101,6 +137,12 @@
     height: 50px
     margin-bottom: 15px
     flex-basis: 47%
+    font-family: "Mulish"
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #BDBDBD
   &__message
     height: 123px
     background-color: #fff
@@ -109,6 +151,12 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    font-family: "Mulish"
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #BDBDBD
   &__button
     min-width: 160px
     min-height: 50px
