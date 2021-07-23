@@ -107,10 +107,11 @@
 @media ( max-width: 767px )
   .container
     max-width: 88%
+    height: 100%
   body
     padding-top: 78px
   .search
-    margin-bottom: 19px
+    margin-bottom: 10px
   .navbar
     &__search,
     &__user
@@ -138,13 +139,19 @@
     &__user
       flex-direction: column
       justify-content: center
-         
+    &-bottom
+      height: 100vh    
     &-menu
-      padding-top: 31px
+      margin: 0
+      padding-top: 10%
+      padding-bottom: 50%
       flex-direction: column
+      height: 100%
       &__item
         max-width: 243px
-        margin-bottom: 20px  
+        margin: 0
+        padding: 0
+        margin-bottom: 2% 
         &--mobile
           &_visible
             display: block

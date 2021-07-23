@@ -1694,12 +1694,13 @@ img {
 @media (max-width: 767px) {
   .container {
     max-width: 88%;
+    height: 100%;
   }
   body {
     padding-top: 78px;
   }
   .search {
-    margin-bottom: 19px;
+    margin-bottom: 10px;
   }
   .navbar__search--mobile_hidden, .navbar__user--mobile_hidden {
     display: none;
@@ -1729,13 +1730,21 @@ img {
     flex-direction: column;
     justify-content: center;
   }
+  .navbar-bottom {
+    height: 100vh;
+  }
   .navbar-menu {
-    padding-top: 31px;
+    margin: 0;
+    padding-top: 10%;
+    padding-bottom: 50%;
     flex-direction: column;
+    height: 100%;
   }
   .navbar-menu__item {
     max-width: 243px;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2%;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
