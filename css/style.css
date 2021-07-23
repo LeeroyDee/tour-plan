@@ -1760,16 +1760,17 @@ img {
   }
   .navbar-menu {
     margin: 0;
-    padding-top: 10%;
-    padding-bottom: 50%;
+    padding-top: 31px;
+    padding-bottom: 68px;
     flex-direction: column;
-    height: 100%;
+    overflow: scroll;
+    height: 80%;
   }
   .navbar-menu__item {
     max-width: 243px;
     margin: 0;
     padding: 0;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
