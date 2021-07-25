@@ -468,6 +468,7 @@ img {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -608,7 +609,7 @@ img {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .hotel-info__name {
@@ -725,7 +726,7 @@ img {
 .booking__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 }
 
 .price {
@@ -1093,7 +1094,7 @@ img {
   color: #ffffff;
   font-family: "Mulish";
   font-size: 24px;
-  line-height: 30px;
+  line-height: 31px;
   font-weight: 300;
 }
 
@@ -1159,7 +1160,7 @@ img {
   font-family: "Mulish";
   font-weight: 700;
   font-size: 36px;
-  line-height: 45px;
+  line-height: 47px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
@@ -1229,7 +1230,7 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews-slider__avatar {
@@ -1237,7 +1238,7 @@ img {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .reviews-slider__username {
@@ -1255,7 +1256,7 @@ img {
   font-family: "Mulish";
   font-weight: 400;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 12px;
   color: #000000;
 }
 
@@ -1360,8 +1361,8 @@ img {
 
 .footer-wrapper {
   display: grid;
-  grid-template-columns: 289px 286px 345px 1fr;
-  grid-template-rows: 195px 23px 88px 1fr 95px 22px;
+  grid-template-columns: 285px 286px 345px 1fr;
+  grid-template-rows: 195px 23px 89px 1fr 95px 22px;
   grid-template-areas: "logo cat addi leg" "logo cat netw netw" ". . . ."  "cont cont form form" ". . . ." "bot bot bot bot";
 }
 
@@ -1405,6 +1406,7 @@ img {
 }
 
 .footer__contact-details {
+  margin-left: -3px;
   grid-area: cont;
 }
 
@@ -1461,7 +1463,7 @@ img {
 }
 
 .footer__item--mb-2 {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer__tel {
@@ -1520,7 +1522,7 @@ img {
   line-height: 22px;
   color: #BDBDBD;
   margin-bottom: 22px;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 .footer__link {
