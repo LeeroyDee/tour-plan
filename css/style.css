@@ -357,6 +357,37 @@ img {
   object-fit: cover;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 24px;
+  height: 50px;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1114,6 +1145,7 @@ img {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1578,6 +1610,103 @@ img {
 
 .bottom__link + .bottom__link {
   margin-left: 7px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal__overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 200;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 478px;
+  padding: 33px 88px;
+  background-color: #0a223d;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  z-index: 201;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__info {
+  font-family: "Mulish";
+  line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1439px) {
@@ -2061,10 +2190,25 @@ img {
 }
 
 @media (max-width: 415px) {
+  .modal__dialog {
+    width: 88%;
+    padding: 33px 5%;
+  }
+  .modal__bottom {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
   .footer-wrapper {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot";
     grid-row-gap: 20px;
+  }
+}
+
+@media (max-height: 504px) {
+  .modal__dialog {
+    height: 100%;
+    overflow-y: scroll;
   }
 }

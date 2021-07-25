@@ -24,13 +24,23 @@ $titleEmail = "подписка на НОВОСТНую РАССЫЛКу";
 $bodyEmail = "
 <h2> подписка <h2>
 <b>Почта:</b> $email<br>";
+
+$titleModal = "Booking Best Tour Plan";
+$bodyModal = "
+<h2>Новое письмо</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$message
+";
+
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -62,13 +72,16 @@ try {
 // Отправка сообщения
 $mail->isHTML(true);
 if($email){
+    if($name){
+    $mail->Subject = $titleModal;
+    $mail->Body = $bodyModal;}
+    else{
     $mail->Subject = $titleEmail;
-    $mail->Body = $bodyEmail;
-}
+    $mail->Body = $bodyEmail;}
+    }
 else{
     $mail->Subject = $title;
-    $mail->Body = $body;  
-}   
+    $mail->Body = $body;}   
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -82,8 +95,9 @@ else {$result = "error";}
 
 
 // Отображение результата
-// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+ //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
 if($email){
-header('Location: subscribe.html');}
-else{
-header('Location: thankyou.html');}
+    if($name){header('Location: index.html');}
+    else{header('Location: subscribe.html');}}
+else{header('Location: thankyou.html');}   

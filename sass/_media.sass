@@ -392,10 +392,23 @@
     &__image
       margin-left: 0
       width: 100%
+  
 @media ( max-width: 415px )
+  .modal
+    &__dialog
+      width: 88%
+      padding: 33px 5%
+    &__bottom
+      flex-direction: column-reverse
+      gap: 15px
   .footer
     &-wrapper
       grid-template-columns: 100%
       grid-template-rows: auto
       grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot"
       grid-row-gap: 20px
+@media ( max-height: 504px )
+  .modal
+    &__dialog
+      height: 100%
+      overflow-y: scroll

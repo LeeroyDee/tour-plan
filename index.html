@@ -170,7 +170,7 @@
               </a>
             </div>
             <!-- .call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- booking -->
           <div class="map" id="map" style="border-radius: 10px;">
@@ -520,6 +520,29 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+       <a href="#" class="modal__close">
+         <img src="img/close.svg" alt="icon: close">
+       </a>
+       <h3 class="modal__title">Booking</h3>
+       <form action="send.php" method="POST" class="modal__form">
+          <input name="name" type="text"  class="input modal__input" placeholder="Your Full Name*">
+          <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*">
+          <input name="email" type="text" class="input modal__input" placeholder="Email*">
+          <textarea  name="message" class="message modal__message"  placeholder="Message"></textarea>
+          <div class="modal__bottom">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>  
+        </form>
+    </div>
+    <!-- /.model__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=0d5ad99c-bf51-4c45-8792-02134e490382&lang=ru_RU">
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
