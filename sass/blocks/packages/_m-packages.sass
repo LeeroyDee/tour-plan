@@ -1,0 +1,59 @@
+@media ( max-width: 1439px )
+  .packages
+    padding-top: 0
+    &-title
+      font-size: 30px;
+      line-height: 38px; 
+    &-wrapper
+      grid-template: 1fr 1fr 1fr/1fr 1fr 
+@media ( max-width: 767px )
+  .packages
+    padding-top: 10px
+    &-title
+      margin-bottom: 50px
+      font-size: 18px;
+      line-height: 22px;
+    &-wrapper
+      grid-template: repeat(5,1fr)/ 100%
+  .package
+    margin: 0 auto
+    &--big
+      grid-column: 1/1
+      flex-direction: column
+      max-width: 350px
+      height: 500px
+    &__offer
+      &--big
+        padding: 4px 9px
+        border-radius: 0px 4px 4px 0px;
+        font-size: 8px
+        line-height: 10px
+    &__title
+      &--big
+        margin-top: 0
+        margin-bottom: 23px
+    &__description
+      &--big
+        display: none
+    &__pating
+      &--big
+        display: none
+    &__wrapper
+      &--big
+        padding: 30px 21px 25px 32px
+        border-radius: 0px 0px 8px 8px
+        width: 100%
+        height: 250px
+    &__image
+      &--big
+        width: 100%
+        height: 250px
+        border-radius: 8px 8px 0px 0px
+    &__button
+      &--big
+        right: 21px
+        bottom: 25px
+  .information
+    &--big
+      margin-bottom: 24px
+  

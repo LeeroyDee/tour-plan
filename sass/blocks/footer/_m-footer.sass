@@ -1,0 +1,83 @@
+@media ( max-width: 1439px )
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: 186px 310px 1fr
+      grid-template-rows: 142px 278px 1fr 1fr 135px
+      grid-template-areas: "logo netw netw" "cat addi leg" "cont cont cont" "form form form" "bot bot bot"
+    &__bottom
+      justify-content: space-between;
+      align-items: center;
+      height: 135px;
+      margin-left: 2px;
+    &__logo
+      align-self: start
+      top: 0
+      left: 0
+      width: 100px;
+      height: 115px;
+    &__social
+      &-network
+        align-self: center
+    &__title
+      &--mt-17
+        margin-top: 16px
+      &--mt-5
+        margin-top: 3px
+    &__contacts
+      &-form
+        max-width: 539px 
+@media ( max-width: 767px )
+  .footer
+    padding-top: 73px
+    &__contacts-form
+      width: 100%
+    &__adress,&__tel,&__email
+      padding-left: 30px
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 119px 90px 210px 228px auto 1fr 48px; 
+      grid-template-areas: "logo logo" "netw netw" "leg addi" "cat cat" "cont cont" " form form" "bot bot"
+      grid-row-gap: 30px
+    &__bottom
+      flex-direction: column
+      height: 50px
+      margin-left: 0
+    &__logo
+      width: 102px
+      height: 120px 
+    &__title
+      flex-basis: 100%
+    &__social
+      &-links
+        margin-left: 0
+      &-network
+        flex-wrap: wrap
+    &__input
+      order: 1
+      flex-basis: 100%
+    &__message
+      margin-bottom: 15px
+      order: 2
+    &__info
+      margin-bottom: 15px
+      display: flex
+      flex-basis: 100%
+      order: 3
+    &__button
+      order: 4
+  .bottom
+    &__text
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    &__image
+      margin-left: 0
+      width: 100%
+@media ( max-width: 415px ) 
+  .footer
+    &-wrapper
+      grid-template-columns: 100%
+      grid-template-rows: auto
+      grid-template-areas: "logo" "netw" "leg" "addi" "cat" "cont" "form" "bot"
+      grid-row-gap: 20px

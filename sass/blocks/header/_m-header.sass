@@ -1,0 +1,93 @@
+@media ( max-width: 1439px )
+  .logo
+    width: 132px
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin-left: auto
+    &-menu
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+  
+
+@media ( max-width: 767px )
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      padding: 0
+      border: none
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .search
+    margin-bottom: 10px
+  .navbar
+    &__search,
+    &__user
+      &--mobile
+        &_hidden
+          display: none
+    &--mobile
+      &_fixed
+        z-index: 120
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+    &-top
+      height: 78px
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      &--visible
+        display: block
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
+      height: 100vh    
+    &-menu
+      margin: 0
+      padding-top: 31px
+      padding-bottom: 68px
+      flex-direction: column
+      overflow: scroll
+      height: 80%
+      &__item
+        max-width: 243px
+        margin: 0
+        padding: 0
+        margin-bottom: 20px 
+        &--mobile
+          &_visible
+            display: block
+  .logo
+    width: 99px
+    height: 14px
+  .user
+    &__name
+      &--light
+        margin-top: 10px
+        margin-left: 0
+        margin-bottom: 7px;
+        color: $light
