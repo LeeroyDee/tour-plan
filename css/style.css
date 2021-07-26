@@ -374,8 +374,8 @@ img {
 
 .button {
   min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
+  min-height: 49px;
+  padding: 0 18px;
   font-family: "Mulish";
   font-style: normal;
   font-weight: bold;
@@ -386,6 +386,10 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.invalid {
+  color: red;
 }
 
 .navbar {
@@ -494,20 +498,20 @@ img {
 .breadcrumb-list {
   display: flex;
   align-items: center;
-  padding: 18px 0;
+  padding: 18px 0 19px 0;
   margin: 0;
   list-style: none;
 }
 
 .breadcrumb-list__item {
   font-size: 10px;
-  line-height: 13px;
+  line-height: 12.55px;
   font-weight: 400;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: "/";
-  margin-right: 4px;
+  margin-right: 2.5px;
 }
 
 .breadcrumb-list__link {
@@ -603,7 +607,6 @@ img {
 }
 
 .hotel-info__star {
-  margin-right: 3px;
   object-fit: cover;
 }
 
@@ -807,7 +810,7 @@ img {
 }
 
 .call-center__num {
-  margin-left: 8px;
+  margin-left: 4px;
   font-family: "Nunito";
   font-weight: 600;
   font-size: 18px;
@@ -1300,7 +1303,7 @@ img {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px 26px;
+  padding: 25px 26px;
   width: 255px;
   height: 255px;
   border-radius: 6px;
@@ -1362,7 +1365,7 @@ img {
 .footer-wrapper {
   display: grid;
   grid-template-columns: 285px 286px 345px 1fr;
-  grid-template-rows: 195px 23px 89px 1fr 95px 22px;
+  grid-template-rows: 195px 23px 89px 1fr 95px 24px;
   grid-template-areas: "logo cat addi leg" "logo cat netw netw" ". . . ."  "cont cont form form" ". . . ." "bot bot bot bot";
 }
 
@@ -1574,8 +1577,6 @@ img {
 
 .footer__button {
   min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1596,7 +1597,7 @@ img {
 }
 
 .bottom__image {
-  margin-left: 277px;
+  margin-left: 281px;
 }
 
 .bottom__link {
@@ -1722,15 +1723,38 @@ img {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
+    justify-content: start;
+    padding-top: 20px;
     padding-bottom: 22px;
+  }
+  .navbar-menu__item--1 {
+    margin-left: 2%;
+  }
+  .navbar-menu__item--2 {
+    margin-left: 3.7%;
+  }
+  .navbar-menu__item--3 {
+    margin-left: 3.7%;
+  }
+  .navbar-menu__item--4 {
+    margin-left: 3.7%;
+  }
+  .navbar-menu__item--5 {
+    margin-left: 3.6%;
+  }
+  .navbar-menu__item--6 {
+    margin-left: 3.6%;
+  }
+  .navbar-menu__item--7 {
+    margin-left: 3.6%;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    margin-left: -35px;
+    padding-left: 33px;
   }
 }
 
@@ -1819,6 +1843,9 @@ img {
   .activities {
     padding-bottom: 69px;
   }
+  .activities__title {
+    line-height: 31px;
+  }
   .activities-wrapper {
     flex-wrap: wrap;
     gap: 20px 20px;
@@ -1856,6 +1883,12 @@ img {
   }
   .card:nth-child(4) {
     order: 3;
+  }
+}
+
+@media (max-width: 1439px) {
+  .breadcrumb-list {
+    padding: 19px 0;
   }
 }
 
@@ -1968,7 +2001,7 @@ img {
 
 @media (max-width: 1439px) {
   .hotel {
-    padding-bottom: 59px;
+    padding-bottom: 56.5px;
   }
   .hotel-slider {
     width: 100%;
@@ -1985,10 +2018,19 @@ img {
   .map {
     width: 340px;
   }
+  .price__pricetag {
+    line-height: 31.74px;
+  }
+  .price__per-room {
+    line-height: 14px;
+  }
   .booking {
     width: 340px;
     padding-left: 22px;
     padding-right: 23px;
+  }
+  .booking__info {
+    margin-bottom: 9px;
   }
 }
 
@@ -2198,7 +2240,7 @@ img {
   }
   .reviews-slider__item {
     max-width: 580px;
-    padding: 0 60px 30px 60px;
+    padding: 0 60px 30px 65px;
   }
   .reviews__title {
     margin-bottom: 50px;
