@@ -36,7 +36,7 @@ $(document).ready(function(){
   //   if(e.keycode===37) swiper.slidePref();
   // })
   
-  
+  //яндекс карта
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.7763358,37.5848271],
@@ -141,6 +141,8 @@ menuButton.addEventListener("click",function (){
       }
     });
   } );
+  //маска
+  $('.phone_us').mask('+7(000) 000-00-00');
 });
 
 

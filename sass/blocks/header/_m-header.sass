@@ -3,10 +3,11 @@
     width: 132px
   .navbar
     &-top
+      justify-content: start
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 38px
     &-menu
       justify-content: start
       padding-top: 20px
@@ -30,9 +31,11 @@
         font-size: 12px
         line-height: 15px
   .search
+    width: 350px
+
     &__input
-      margin-left: -35px
       padding-left: 33px;
+      width: 100%
   
 
 @media ( max-width: 767px )
@@ -68,6 +71,7 @@
         top: 0
         right: 0
     &-top
+      justify-content: space-between;
       height: 78px
     &-bottom
       display: none
