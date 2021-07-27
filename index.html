@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -192,12 +193,12 @@
   <!-- /.hotel -->
   
   <!-- /.packages -->
-  <section class="newsletter" data-parallax="scroll" data-image-src="./img/newsletter-bg.jpeg">
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpeg">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title">subscribe to our
+      <h2 class="newsletter-title" data-aos="zoom-in-right">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe" data-aos="zoom-in-left">
         <input  name="email" type="text" placeholder="Your email address" class="subscribe__input">
           <button class="subscribe__button">
           Send
@@ -464,11 +465,11 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=0d5ad99c-bf51-4c45-8792-02134e490382&lang=ru_RU">
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="/js/jquery.mask.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
