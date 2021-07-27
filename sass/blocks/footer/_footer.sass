@@ -39,7 +39,7 @@
     grid-area: cont
   &__form
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: space-between
     flex-wrap: wrap
   &__bottom
@@ -136,14 +136,20 @@
     border: none
     padding: 0 23px
     height: 50px
-    margin-bottom: 15px
-    flex-basis: 47%
+    
     font-family: "Mulish"
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
     color: #BDBDBD
+    width: 100%
+    
+    &-group
+      margin-bottom: 15px
+      flex-basis: 47%
+      
+
   &__message
     height: 123px
     background-color: #fff
