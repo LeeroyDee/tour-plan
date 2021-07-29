@@ -124,7 +124,7 @@ menuButton.addEventListener("click",function (){
   //валидация форм
   $( "form" ).each( function() {
     $( this ).validate({
-      errorClass: "invalid",
+      errorClass: "invalid",  
       messages: {
         name: {
           required: "Please specify your name",
@@ -136,16 +136,17 @@ menuButton.addEventListener("click",function (){
         },
         phone: {
           required: "Enter your phone number",
-          phone: "Your phone must be in the format of +7 (999) 999-99-99"
+          phone: "Your phone must be in the format of +7 (999) 999-99-99",
+          minlength: "Phone must be at least 11 letters"
         }
       }
     });
   } );
   //маска
-  $('.phone_us').mask('+7(000) 000-00-00');
+  $('.phone_us').mask('+7(999) 99-99-99');
   AOS.init({
-    disable: function () {
-      var maxWidth = 768;
+    disable: function() {
+      var maxWidth = 766;
       return window.innerWidth < maxWidth;
     }
   });
