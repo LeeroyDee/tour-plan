@@ -40,8 +40,8 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+    //$mail->SMTPDebug = 2;
+    //$mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
@@ -96,8 +96,13 @@ else {$result = "error";}
 
 // Отображение результата
  //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-
 if($email){
-    if($name){header('Location: index.html');}
-    else{header('Location: subscribe.html');}}
-else{header('Location: thankyou.html');}   
+    if($name){
+        header('Location: thankyou.html');
+    }else{
+        header('Location: subscribe.html');
+    }
+}
+else{
+    header('Location: thankyou.html');
+}   
