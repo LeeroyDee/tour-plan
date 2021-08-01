@@ -4,7 +4,7 @@
     &__additional
       margin-left: 15px;
     &-wrapper
-      grid-template-columns: 186px 310px 1fr
+      grid-template-columns: 186px 312px 1fr
       grid-template-rows: 142px 278px 1fr 1fr 135px
       grid-template-areas: "logo netw netw" "cat addi leg" "cont cont cont" "form form form" "bot bot bot"
     &__bottom
@@ -22,10 +22,24 @@
       &-network
         align-self: center
     &__title
+      &--categ
+        margin-top: 18px
+      &--add
+        margin-top: 18px
+      &--legal
+        margin-top: 18px
+      &--cont
+        margin-top: 18px
+      &--send
+        margin-bottom: 35px;
       &--mt-17
         margin-top: 16px
       &--mt-5
         margin-top: 3px
+    &__contact
+      &-details
+        margin-left: 0
+
     &__contacts
       &-form
         max-width: 539px 
@@ -48,10 +62,25 @@
       height: 50px
       margin-left: 0
     &__logo
-      width: 102px
-      height: 120px 
+      width: 94px
+      height: 106px 
     &__title
+      margin-top: 16px
       flex-basis: 100%
+      &--social
+        margin-bottom: 24px
+      &--legal
+        margin-top: 8px;
+      &--add
+        margin-top: 9px;
+      &--categ
+        margin-top: 8px
+      &--cont
+        margin-top: 20px
+      &--send
+        margin-bottom: 16px
+
+
     &__social
       &-links
         margin-left: 0
@@ -73,10 +102,12 @@
       order: 4
   .bottom
     &__text
+      margin-top: 13px;
       width: 100%;
       display: flex;
       justify-content: space-between;
     &__image
+      margin-top: 11px;
       margin-left: 0
       width: 100%
 @media ( max-width: 415px ) 
@@ -94,4 +125,11 @@
       text-decoration: none
       color: inherit
       &:hover
+        border-radius: 50%
         color: blue
+      &>img
+        &:hover
+          border-radius: 50%
+          background-color: blue 
+          
+      
